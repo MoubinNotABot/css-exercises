@@ -5,7 +5,12 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+
+
+
 
 img {
   width: 600px;
@@ -25,3 +30,51 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.header, .footer, .left-links, .right-links{
+  display: flex;
+  gap: 0px 10px;
+}
+
+.header, .footer {
+  padding: 0px 10px;
+  /* align-items: center; */
+}
+
+.right-links{
+  margin-left: auto;
+}
+
+.image-container, .input, .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons{
+  gap: 0px 5px;
+}
+
+
+/* not really sure how margin-top can not go in .footer. 
+similarly not sure why flex-direction: had to be column. */
+.footer{
+  background-color: #eeeeee;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
